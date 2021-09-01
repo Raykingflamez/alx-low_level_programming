@@ -1,18 +1,21 @@
 #include "main.h"
-
 /**
-* print_alphabet - Print the alphabet in lowercase.
+* _islower - Shows 1 if the input is a
+* lowercase character. Another cases, shows 0
 *
-* Return: void.
+* @c: The character in ASCII code
+*
+* Return: 1 for lowercase. 0 for the rest.
 */
-
-void print_alphabet(void)
+int _islower(int c)
 {
-	int i;
-
-	for (i = 97; i < 123; i++)
-		{
-		_putchar(i);
-		}
-		_putchar('\n');
+	if (c >= 97 && c <= 122)
+	{
+	return (1);
+	}
+	else
+	{
+	return (0);
+	}
+	_putchar('\n');
 }
